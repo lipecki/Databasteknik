@@ -1,4 +1,4 @@
-package mainTests;
+package main;
 
 import com.Connector;
 
