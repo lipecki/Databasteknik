@@ -20,9 +20,10 @@ public class Connector {
         Connection connection = null;
 
         try{
-            pw = pf.readPassword("Please enter passphrase: ");
+            //pw = pf.readPassword("Please enter passphrase: ");
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root", pw);
+            //connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root", pw);
+            connection = DriverManager.getConnection("jdbc:mysql://viggolunden.com:3306/test","projekt", "sql");
         }
         catch (Exception e){
             e.printStackTrace();
